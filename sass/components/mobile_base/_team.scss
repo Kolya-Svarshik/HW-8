@@ -1,0 +1,52 @@
+.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: $color-bg-box-card;
+}
+
+.team-title {
+    margin-bottom: 30px;
+
+    color: $color-tetli-text;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.team-item {
+    display: block;
+    background-color: $color-primary-white;
+    border-radius: 4px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    // &:not(:last-child) {
+    //     margin-right: 30px;
+    // }
+}
+
+.team-img {
+    display: block;
+}
+
+.team-list {
+    display: block;
+    margin: 30px 32px 24px 32px;
+}
+
+.team-subtitle {
+    margin-bottom: 10px;
+
+    color: $color-tetli-text;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team-text {
+    margin-bottom: 16px;
+
+    text-align: center;
+}

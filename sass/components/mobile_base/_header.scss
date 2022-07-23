@@ -1,0 +1,100 @@
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    // border-bottom: 1px solid $color-hr;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+// .site-nav {
+//     display: flex;
+// }
+
+// .site-item:not(:last-child) {
+//     margin-right: 50px;
+// }
+
+// .site-link {
+//     display: block;
+//     padding-top: 31px;
+//     padding-bottom: 31px;
+
+//     color: $color-tetli-text;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+
+//     transition: color 250ms $timing-function;
+
+//     &:hover, &:focus {
+//         color: $color-accent
+//     }
+
+//     &.current {
+//         position: relative;
+//     }
+// }
+
+// .current {
+//     color: $color-accent;
+
+//      &::after {
+//         content: "";
+//         display: block;
+//         position: absolute;
+//         bottom: 0;
+//         width: 100%;
+//         height: 4px;
+//         border-radius: 2px;
+//         background-color: $color-accent;
+//     }
+// }
+
+// .mail-nav {
+//     display: flex;
+//     margin-left: auto;
+// }
+
+// .mail-item {
+//     display: flex;
+//     align-items: center;
+
+//     &:not(:last-child) {
+//         margin-right: 30px;
+//     }
+// }
+
+// .mail-link {
+//     display: flex;
+//     align-items: center;
+
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     color: $color-primary-text;
+
+//     transition: color 250ms $timing-function, --color6 250ms $timing-function;
+    
+//         &:focus,
+//         &:hover {
+//             color: $color-accent;
+//             --color6: #2196F3;
+//         }
+// }
+
+// .icon-mail {
+//     width: 16px;
+//     height: 11px;
+//     margin-right: 10px;
+// }
+
+// .icon-smartphone {
+//     width: 10px;
+//     height: 15px;
+//     margin-right: 10px;
+// }

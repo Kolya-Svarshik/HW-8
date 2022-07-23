@@ -1,0 +1,12 @@
+@import './base/normalize';
+@import './utils/variables';
+@import './base/base';
+
+// mobile 
+
+@import './components/mobile_base/header';
+@import './components/mobile_base/logo';
+@import './components/mobile_base/menu';
+@import './components/mobile_base/advantages';
+@import './components/mobile_base/social-link';
+@import './components/mobile_base/team';

@@ -1,0 +1,42 @@
+.social-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 250ms $timing-function, --color5 250ms $timing-function;
+
+    .footer & {
+        background-color: $color-bg-footer-button;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $color-accent;
+    }
+}
+
+.icon-social {
+    width: 20px;
+    height: 20px;
+
+    .footer & {
+        --color5: #fff;
+    }
+
+    .social-link:hover>&,
+    .social-link:focus>& {
+        --color5: #fff;
+    }
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}

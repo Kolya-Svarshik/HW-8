@@ -1,0 +1,19 @@
+.logo {
+    color: $color-tetli-text;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    line-height: 1.17;
+
+    padding: 15px;
+
+    &-span {
+        color: $color-accent;
+    }
+
+    .logo-footer>& {
+        padding: 0;
+        margin-bottom: 20px;
+        color: $color-primary-white;
+        text-align: center;
+    }
+}
