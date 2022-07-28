@@ -9,14 +9,17 @@
 
 .logo-footer {
     margin-bottom: 20px;
+
+    & > .logo {
+        padding: 0;
+        margin-bottom: 20px;
+        color: $color-primary-white;
+        text-align: center;
+    }
 }
 
 .copy {
     font-style: normal;
-}
-
-.copy-nav {
-    
 }
 
 .copy-nav:not(:last-child) {
@@ -66,7 +69,7 @@
 .form-input {
     align-items: center;
     height: 50px;
-    width: auto;
+    width: 100%;
     padding: 15px;
     margin-bottom: 20px;
     border: 1px solid $color-br-footer-mail;
@@ -82,6 +85,10 @@
         color: $color-br-footer-mail;
         font-size: 16px;
         line-height: 1.25;
+    }
+    
+    @media screen and (min-width: 479px) {
+        width: auto;
     }
 
     @media screen and (min-width: 480px) {
@@ -128,8 +135,9 @@
 
     width: 24px;
     height: 24px;
-    right: 15px;
-    --color6: #fff;
+    right: 27px;
+    --color5: #fff;
+
     background-color: transparent;
 
     transform: translateY(-40px);

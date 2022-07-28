@@ -31,47 +31,61 @@
               aria-controls="menu-controls"
               data-menu-button
             >
-              <svg class="icon-menu" aria-label="Переключатель мобильного меню">
-                <!-- <use href="./images/sprite.svg#icon-close"></use> -->
-                <use href="./images/sprite.svg#icon-menu"></use>
+              <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="icon-close"
+                  href="./images/sprite.svg#icon-close"
+                ></use>
+                <use
+                  class="icon-menu"
+                  href="./images/sprite.svg#icon-menu"
+                ></use>
               </svg>
             </button>
 
             <div class="menu-container" id="menu-container" data-menu>
-              <div class="navigation"></div>
-              <div class="contacts"></div>
+              <div class="navigation">
+                <ul class="site-nav">
+                  <li class="site-item">
+                    <a href="./index.html" class="site-link current">Студия</a>
+                  </li>
+                  <li class="site-item">
+                    <a href="./portfolio.html" class="site-link">Портфолио</a>
+                  </li>
+                  <li class="site-item">
+                    <a href="./contacts.html" class="site-link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contacts">
+                <ul class="mail-nav">
+                  <li class="mail-item">
+                    <a
+                      href="mailto:nazarbuyalo.nizza@gmail.com"
+                      class="mail-link"
+                    >
+                      <svg class="icon-mail">
+                        <use href="./images/sprite.svg#icon-mail"></use>
+                      </svg>
+                      nazarbuyalo.nizza@gmail.com
+                    </a>
+                  </li>
+                  <li class="mail-item">
+                    <a href="tewl:+380959103848" class="mail-link">
+                      <svg class="icon-smartphone">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                      </svg>
+                      +38 095 910 38 48
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            <!-- <ul class="site-nav">
-            <li class="site-item">
-              <a href="./index.html" class="site-link current">Студия</a>
-            </li>
-            <li class="site-item">
-              <a href="./portfolio.html" class="site-link">Портфолио</a>
-            </li>
-            <li class="site-item">
-              <a href="./contacts.html" class="site-link">Контакты</a>
-            </li>
-          </ul>
-
-          <ul class="mail-nav">
-            <li class="mail-item">
-              <a href="mailto:nazarbuyalo.nizza@gmail.com" class="mail-link">
-                <svg class="icon-mail">
-                  <use href="./images/sprite.svg#icon-mail"></use>
-                </svg>
-                nazarbuyalo.nizza@gmail.com
-              </a>
-            </li>
-            <li class="mail-item">
-              <a href="tewl:+380959103848" class="mail-link">
-                <svg class="icon-smartphone">
-                  <use href="./images/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +(380)959103848
-              </a>
-            </li>
-          </ul> -->
           </nav>
         </div>
       </section>
@@ -151,7 +165,7 @@
 
       <!--Чем мы занимаемся-->
 
-      <!-- <section class="robots">
+      <section class="robots">
         <div class="container">
           <h2 class="robots-title">Чем мы занимаемся</h2>
           <ul class="robots-list">
@@ -184,7 +198,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Наша команда-->
 
@@ -193,12 +207,13 @@
           <h2 class="team-title">Наша команда</h2>
           <ul>
             <li class="team-item">
-              <img
-                src="./images/nikolai_kucherenko.jpg"
-                alt="Nikolai Kucherenko"
-                width="270"
-                class="team-img"
-              />
+              <div class="team-photo">
+                <img
+                  src="./images/nikolai_kucherenko.jpg"
+                  alt="Nikolai Kucherenko"
+                  class="team-img"
+                />
+              </div>
               <div class="team-list">
                 <h3 class="team-subtitle">Николай Кучеренко</h3>
                 <p class="team-text">Product Designer</p>
@@ -255,12 +270,13 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/olga_ivanova.jpg"
-                alt="Ольга Иванова"
-                width="270"
-                class="team-img"
-              />
+              <div class="team-photo">
+                <img
+                  src="./images/olga_ivanova.jpg"
+                  alt="Ольга Иванова"
+                  class="team-img"
+                />
+              </div>
               <div class="team-list">
                 <h3 class="team-subtitle">Ольга Иванова</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -317,12 +333,13 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/andrey_shevchenko.jpg"
-                alt="Андрей Шевченко"
-                width="270"
-                class="team-img"
-              />
+              <div class="team-photo">
+                <img
+                  src="./images/andrey_shevchenko.jpg"
+                  alt="Андрей Шевченко"
+                  class="team-img"
+                />
+              </div>
               <div class="team-list">
                 <h3 class="team-subtitle">Андрей Шевченко</h3>
                 <p class="team-text">Marketing</p>
@@ -379,12 +396,13 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/ivan_nikolaev.jpg"
-                alt="Иван Николаев"
-                width="270"
-                class="team-img"
-              />
+              <div class="team-photo">
+                <img
+                  src="./images/ivan_nikolaev.jpg"
+                  alt="Иван Николаев"
+                  class="team-img"
+                />
+              </div>
               <div class="team-list">
                 <h3 class="team-subtitle">Иван Николаев</h3>
                 <p class="team-text">UI Designer</p>
@@ -674,10 +692,9 @@
                 type="email"
                 name="email"
                 placeholder="E-mail"
-                autocomplete="email"
               />
             </label>
-            <button type="submit" class="form-button" autocomplete="off">
+            <button type="submit" class="form-button">
               Подписаться
               <svg class="icon-airplane">
                 <use href="./images/sprite.svg#icon-airplane"></use>
@@ -691,5 +708,6 @@
       </section>
     </footer>
     <script src="./js/index.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

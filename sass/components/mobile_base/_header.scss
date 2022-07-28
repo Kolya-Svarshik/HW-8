@@ -1,7 +1,11 @@
 .header {
     padding-top: 10px;
     padding-bottom: 10px;
-    // border-bottom: 1px solid $color-hr;
+    border: 1px solid $color-hr;
+
+    @media screen and (max-width: 768px) {
+        position: relative;
+    }
 }
 
 .header-nav {
@@ -9,92 +13,95 @@
     align-items: center;
 }
 
-// .site-nav {
-//     display: flex;
-// }
+.navigation {
+    margin-bottom: 60px;
+}
 
-// .site-item:not(:last-child) {
-//     margin-right: 50px;
-// }
+.site-nav {
+}
 
-// .site-link {
-//     display: block;
-//     padding-top: 31px;
-//     padding-bottom: 31px;
+.site-item {
+    @media screen and (max-width: 768px) {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+}
 
-//     color: $color-tetli-text;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
+.site-link {
+    display: inline-block;
 
-//     transition: color 250ms $timing-function;
+    color: $color-tetli-text;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
 
-//     &:hover, &:focus {
-//         color: $color-accent
-//     }
+    transition: color 250ms $timing-function;
 
-//     &.current {
-//         position: relative;
-//     }
-// }
+    &:hover, &:focus {
+        color: $color-accent
+    }
 
-// .current {
-//     color: $color-accent;
+    &.current {
+        position: relative;
+    }
+}
 
-//      &::after {
-//         content: "";
-//         display: block;
-//         position: absolute;
-//         bottom: 0;
-//         width: 100%;
-//         height: 4px;
-//         border-radius: 2px;
-//         background-color: $color-accent;
-//     }
-// }
+.current {
+    color: $color-accent;
 
-// .mail-nav {
-//     display: flex;
-//     margin-left: auto;
-// }
+     &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -8px;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $color-accent;
+    }
+}
 
-// .mail-item {
-//     display: flex;
-//     align-items: center;
+.mail-nav {
+    display: inline-block;
+}
 
-//     &:not(:last-child) {
-//         margin-right: 30px;
-//     }
-// }
+.mail-item {
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
 
-// .mail-link {
-//     display: flex;
-//     align-items: center;
+.mail-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     color: $color-primary-text;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $color-primary-text;
+    text-align: center;
 
-//     transition: color 250ms $timing-function, --color6 250ms $timing-function;
+    transition: color 250ms $timing-function, --color6 250ms $timing-function;
     
-//         &:focus,
-//         &:hover {
-//             color: $color-accent;
-//             --color6: #2196F3;
-//         }
-// }
+        &:focus,
+        &:hover {
+            color: $color-accent;
+            --color5: #2196F3;
+        }
+}
 
-// .icon-mail {
-//     width: 16px;
-//     height: 11px;
-//     margin-right: 10px;
-// }
+.icon-mail {
+    width: 16px;
+    height: 11px;
+    margin-right: 10px;
+}
 
-// .icon-smartphone {
-//     width: 10px;
-//     height: 15px;
-//     margin-right: 10px;
-// }
+.icon-smartphone {
+    width: 10px;
+    height: 15px;
+    margin-right: 10px;
+}

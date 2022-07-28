@@ -8,6 +8,10 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    &.modal-open {
+        overflow: hidden;
+    }
 }
 
 
@@ -49,6 +53,10 @@ textarea {
     .footer>& {
         padding-top: 60px;
         padding-bottom: 60px;
+    }
+
+    @media screen and (max-width: 479px) {
+        max-width: 479px;
     }
 
     @media screen and (min-width: 480px) {

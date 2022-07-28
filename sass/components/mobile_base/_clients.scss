@@ -14,6 +14,11 @@
 }
 
 .clients-list {
+    @media screen and (max-width: 479px) {
+        display: grid;
+        justify-content: center;
+    }
+
     @media screen and (min-width: 480px) {
         display: flex;
         flex-wrap: wrap;
@@ -22,6 +27,12 @@
 }
 
 .clients-item {
+    @media screen and (max-width: 479px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
     @media screen and (min-width: 480px) {
         width: calc((100% - 4 * 15px) / 2);
         margin: 15px;
@@ -47,7 +58,7 @@
     &:focus,
     &:hover {
         border-color: $color-accent;
-        --color5: #2196F3;
+        --color4: #2196F3;
     }
 }
 
