@@ -48,7 +48,6 @@
     @media screen and (max-width: 479px) {
         max-width: 448px;
         width: calc(100% - 2 * 10px);
-        padding: 40px 20px 30px;
     }
 }
 
@@ -294,7 +293,7 @@
     }
 }
 
-.data-exit {
+.modal-exit {
     display: flex;
     position: inherit;
     justify-content: center;
@@ -310,24 +309,23 @@
 
     background-color: $color-primary-white;
 
+    box-shadow: 0px 2px 1px rgb(0 0 0 / 20%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 1px 3px rgb(0 0 0 / 12%);
+
     text-align: center;
 
     cursor: pointer;
-}
 
-.icon-exit {
-    display: block;
-    width: 18px;
-    height: 18px;
+    & .icon-exit {
+        display: block;
+        width: 18px;
+        height: 18px;
+    
+        fill: $color-tetli-text;
+    
+        transition: fill 250 $timing-function;
+    }
 
-    top: 50%;
-    right: 50%;
-
-    fill: $color-tetli-text;
-
-    transition: fill 250 $timing-function;
-
-    .data-exit:hover > & {
-            fill: $color-accent;
-        }
+    &:hover > .icon-exit {
+        fill: $color-accent;
+    }
 }

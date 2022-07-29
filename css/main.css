@@ -208,14 +208,8 @@ textarea {
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
-@media screen and (max-width: 768px) {
-  .header {
-    position: relative;
-  }
-}
-
 .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,18 +218,21 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.navigation {
-  margin-bottom: 60px;
-}
-
 @media screen and (max-width: 768px) {
-  .site-item:not(:last-child) {
-    margin-bottom: 40px;
+  .header {
+    position: relative;
   }
 }
 
-.site-link {
+.site-nav {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .site-nav .site-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+.site-nav .site-link {
   display: inline-block;
   color: #212121;
   font-weight: 500;
@@ -245,17 +242,16 @@ textarea {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-link:hover, .site-link:focus {
+.site-nav .site-link:hover, .site-nav .site-link:focus {
   color: #2196F3;
 }
-.site-link.current {
+.site-nav .site-link.current {
   position: relative;
 }
-
-.current {
+.site-nav .current {
   color: #2196F3;
 }
-.current::after {
+.site-nav .current::after {
   content: "";
   display: block;
   position: absolute;
@@ -269,12 +265,10 @@ textarea {
 .mail-nav {
   display: inline-block;
 }
-
-.mail-item:not(:last-child) {
+.mail-nav .mail-item:not(:last-child) {
   margin-bottom: 16px;
 }
-
-.mail-link {
+.mail-nav .mail-item .mail-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,18 +286,16 @@ textarea {
   text-align: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), --color6 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mail-link:focus, .mail-link:hover {
+.mail-nav .mail-item .mail-link:focus, .mail-nav .mail-item .mail-link:hover {
   color: #2196F3;
-  --color5: #2196F3;
+  --color5: #2196f3;
 }
-
-.icon-mail {
+.mail-nav .mail-item .mail-link .icon-mail {
   width: 16px;
   height: 11px;
   margin-right: 10px;
 }
-
-.icon-smartphone {
+.mail-nav .mail-item .mail-link .icon-smartphone {
   width: 10px;
   height: 15px;
   margin-right: 10px;
@@ -362,18 +354,24 @@ textarea {
 }
 @media screen and (max-width: 768px) {
   .menu-container {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding-top: 60px;
     padding-bottom: 45px;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    -webkit-transform: translateY(-120%);
+            transform: translateY(-120%);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu-container.is-open {
-    display: block;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 @media screen and (min-width: 768px) {
@@ -498,7 +496,6 @@ textarea {
   .modal {
     max-width: 448px;
     width: calc(100% - 20px);
-    padding: 40px 20px 30px;
   }
 }
 
@@ -764,7 +761,7 @@ textarea {
   fill: #2196F3;
 }
 
-.data-exit {
+.modal-exit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -782,21 +779,20 @@ textarea {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   text-align: center;
   cursor: pointer;
 }
-
-.icon-exit {
+.modal-exit .icon-exit {
   display: block;
   width: 18px;
   height: 18px;
-  top: 50%;
-  right: 50%;
   fill: #212121;
   -webkit-transition: fill 250 cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250 cubic-bezier(0.4, 0, 0.2, 1);
 }
-.data-exit:hover > .icon-exit {
+.modal-exit:hover > .icon-exit {
   fill: #2196F3;
 }
 
@@ -1120,15 +1116,12 @@ textarea {
 .copy {
   font-style: normal;
 }
-
 .copy-nav:not(:last-child) {
   margin-bottom: 8px;
 }
-
 .copy-address {
   color: #FFFFFF;
 }
-
 .copy-link {
   color: rgba(255, 255, 255, 0.6);
 }
