@@ -1,62 +1,55 @@
 .robots {
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
-}
-
-.robots-list {
-    display: flex;
-    justify-content: center;
-}
-
-.robots-item {
-    position: relative;
-
-    &:not(:last-child) {
-        margin-right: 30px;
-        width: 370px;
-    }
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .robots-title {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 
-    color: $color-tetli-text;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
+  color: $color-tetli-text;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
-.robots-img {
-    display: block;
-}
+.robots-list {
+  display: flex;
+  justify-content: center;
 
-.robots-text {
-    display: flex;
-    position: absolute;
-    height: 70px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to right,
-            rgba(47,
-                48,
-                58,
-                0.8),
-            rgba(47,
-                48,
-                58,
-                0.8));
+  .robots-item {
+    position: relative;
 
+    &:not(:last-child) {
+      margin-right: 30px;
+      width: 370px;
+    }
 
+    .robots-img {
+      display: block;
+    }
 
+    .robots-text {
+      display: flex;
+      position: absolute;
+      height: 70px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      );
 
-    color: $color-primary-white;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
+      color: $color-primary-white;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: center;
+    }
+  }
 }

@@ -208,7 +208,6 @@ textarea {
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ECECEC;
 }
 .header-nav {
   display: -webkit-box;
@@ -370,6 +369,7 @@ textarea {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu-container.is-open {
+    border-top: 1px solid #ECECEC;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
@@ -398,33 +398,115 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1600px;
-  width: 100%;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(47, 48, 58, 0.8);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/people_in_office.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/people_in_office.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
 }
-
+@media screen and (max-width: 576px) {
+  .hero {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 576px) and (-webkit-min-device-pixel-ratio: 1), screen and (max-width: 576px) and (min-resolution: 96dpi), screen and (max-width: 576px) and (min-resolution: 1dppx) {
+  .hero {
+    background-color: rgba(47, 48, 58, 0.8);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../../../images/people_in_office-modile/people_in_office-mobile.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../../../images/people_in_office-modile/people_in_office-mobile.webp");
+  }
+}
+@media screen and (max-width: 576px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 576px) and (min-resolution: 192dpi), screen and (max-width: 576px) and (min-resolution: 2dppx) {
+  .hero {
+    background-color: rgba(47, 48, 58, 0.8);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../../../images/people_in_office-modile/people_in_office-mobile@2x.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../../../images/people_in_office-modile/people_in_office-mobile@2x.webp");
+  }
+}
+@media screen and (max-width: 576px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 576px) and (min-resolution: 288dpi), screen and (max-width: 576px) and (min-resolution: 3dppx) {
+  .hero {
+    background-color: rgba(47, 48, 58, 0.8);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../../../images/people_in_office-modile/people_in_office-mobile@3x.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../../../images/people_in_office-modile/people_in_office-mobile@3x.webp");
+  }
+}
+@media screen and (min-width: 577px) {
+  .hero {
+    max-width: 768px;
+    background-color: rgba(47, 48, 58, 0.8);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../../../images/people_in_office-tablet/people_in_office-labtop.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../../../images/people_in_office-tablet/people_in_office-labtop.webp");
+  }
+}
+@media screen and (min-width: 577px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 577px) and (min-resolution: 192dpi), screen and (min-width: 577px) and (min-resolution: 2dppx) {
+  .hero {
+    background-color: rgba(47, 48, 58, 0.8);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../../../images/people_in_office-tablet/people_in_office-labtop@2x.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../../../images/people_in_office-tablet/people_in_office-labtop@2x.webp");
+  }
+}
+@media screen and (min-width: 577px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 577px) and (min-resolution: 288dpi), screen and (min-width: 577px) and (min-resolution: 3dppx) {
+  .hero {
+    background-color: rgba(47, 48, 58, 0.8);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../../../images/people_in_office-tablet/people_in_office-labtop@3x.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../../../images/people_in_office-tablet/people_in_office-labtop@3x.webp");
+  }
+}
+@media screen and (min-width: 960px) {
+  .hero {
+    max-width: 1600px;
+    background-color: rgba(47, 48, 58, 0.8);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../../../images/people_in_office-desctop/people_in_office-desctop.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../../../images/people_in_office-desctop/people_in_office-desctop.webp");
+  }
+}
+@media screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 960px) and (min-resolution: 192dpi), screen and (min-width: 960px) and (min-resolution: 2dppx) {
+  .hero {
+    background-color: rgba(47, 48, 58, 0.8);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../../../images/people_in_office-desctop/people_in_office-desctop@2x.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../../../images/people_in_office-desctop/people_in_office-desctop@2x.webp");
+  }
+}
+@media screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 960px) and (min-resolution: 288dpi), screen and (min-width: 960px) and (min-resolution: 3dppx) {
+  .hero {
+    background-color: rgba(47, 48, 58, 0.8);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../../../images/people_in_office-desctop/people_in_office-desctop@3x.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../../../images/people_in_office-desctop/people_in_office-desctop@3x.webp");
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hero-element {
+    margin-top: 118px;
+    margin-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-element {
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+}
 .hero-title {
-  max-width: 360px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 30px;
   color: #FFFFFF;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
   text-transform: uppercase;
-  text-align: center;
   letter-spacing: 0.06em;
+}
+@media screen and (max-width: 1199px) {
+  .hero-title {
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.61;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    max-width: 620px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .link-button {
@@ -443,7 +525,6 @@ textarea {
   text-align: center;
   cursor: pointer;
 }
-
 .link-button.primary {
   color: #FFFFFF;
   background-color: #2196F3;
@@ -800,11 +881,9 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .advantages-item:not(:last-child) {
   margin-bottom: 30px;
 }
-
 .advantages-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -820,12 +899,6 @@ textarea {
   border-radius: 4px;
   background-color: #F5F4FA;
 }
-
-.icon-advantages {
-  width: 70px;
-  height: 70px;
-}
-
 .advantages-title {
   margin-bottom: 10px;
   color: #212121;
@@ -841,23 +914,6 @@ textarea {
   }
 }
 
-.robots-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.robots-item {
-  position: relative;
-}
-.robots-item:not(:last-child) {
-  margin-right: 30px;
-  width: 370px;
-}
-
 .robots-title {
   margin-bottom: 50px;
   color: #212121;
@@ -867,11 +923,25 @@ textarea {
   text-align: center;
 }
 
-.robots-img {
+.robots-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.robots-list .robots-item {
+  position: relative;
+}
+.robots-list .robots-item:not(:last-child) {
+  margin-right: 30px;
+  width: 370px;
+}
+.robots-list .robots-item .robots-img {
   display: block;
 }
-
-.robots-text {
+.robots-list .robots-item .robots-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -895,13 +965,16 @@ textarea {
   text-align: center;
 }
 
-.social-nav {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link {
@@ -925,20 +998,15 @@ textarea {
 .social-link:hover, .social-link:focus {
   background-color: #2196F3;
 }
-
-.icon-social {
+.social-link:hover .icon-social, .social-link:focus .icon-social {
+  --color4: #fff;
+}
+.social-link .icon-social {
   width: 20px;
   height: 20px;
 }
-.footer .icon-social {
+.footer .social-link .icon-social {
   --color4: #fff;
-}
-.social-link:hover > .icon-social, .social-link:focus > .icon-social {
-  --color4: #fff;
-}
-
-.social-item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .team {
@@ -946,7 +1014,6 @@ textarea {
   padding-bottom: 60px;
   background: #F5F4FA;
 }
-
 .team-title {
   margin-bottom: 30px;
   color: #212121;
@@ -966,25 +1033,21 @@ textarea {
 .team-item:not(:last-child) {
   margin-bottom: 30px;
 }
-
-.team-photo {
+.team-item .team-photo {
   width: 100%;
   height: 320px;
   overflow: hidden;
 }
-
-.team-img {
+.team-item .team-photo .team-img {
   display: block;
   width: 100%;
 }
-
-.team-list {
+.team-item .team-list {
   display: block;
   margin-top: 30px;
   margin-bottom: 24px;
 }
-
-.team-subtitle {
+.team-item .team-list .team-subtitle {
   margin-bottom: 10px;
   color: #212121;
   font-weight: 500;
@@ -992,8 +1055,7 @@ textarea {
   line-height: 1.19;
   text-align: center;
 }
-
-.team-text {
+.team-item .team-list .team-text {
   margin-bottom: 16px;
   text-align: center;
 }
@@ -1002,7 +1064,6 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .clients-title {
   margin-bottom: 30px;
   color: #212121;
@@ -1011,7 +1072,6 @@ textarea {
   line-height: 1.18;
   text-align: center;
 }
-
 @media screen and (max-width: 479px) {
   .clients-list {
     display: grid;
@@ -1042,8 +1102,7 @@ textarea {
     margin: 15px;
   }
 }
-
-.clients-link {
+.clients-item .clients-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1059,37 +1118,31 @@ textarea {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), --color5 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:focus, .clients-link:hover {
+.clients-item .clients-link:focus, .clients-item .clients-link:hover {
   border-color: #2196F3;
-  --color4: #2196F3;
+  --color4: #2196f3;
 }
-
-.icon-ya_co {
+.clients-item .clients-link .icon-ya_co {
   width: 44.27px;
   height: 49.23px;
 }
-
-.icon-company_tagline_here {
+.clients-item .clients-link .icon-company_tagline_here {
   width: 40px;
   height: 52px;
 }
-
-.icon-object_company {
+.clients-item .clients-link .icon-object_company {
   width: 41px;
   height: 42.6px;
 }
-
-.icon-foster_peters {
+.clients-item .clients-link .icon-foster_peters {
   width: 79.66px;
   height: 42.02px;
 }
-
-.icon-brand {
+.clients-item .clients-link .icon-brand {
   width: 59px;
   height: 47px;
 }
-
-.icon-company_teg_line {
+.clients-item .clients-link .icon-company_teg_line {
   width: 88.48px;
   height: 45.44px;
 }

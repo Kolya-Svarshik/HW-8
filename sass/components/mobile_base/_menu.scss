@@ -54,6 +54,7 @@
     transition: transform 250ms $timing-function;
 
     &.is-open {
+      border-top: 1px solid $color-hr;
       transform: translateY(0%);
     }
   }

@@ -1,18 +1,12 @@
 .advantages {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-.advantages-list {
-}
-
-
-
-.advantages-item:not(:last-child) {
+  &-item:not(:last-child) {
     margin-bottom: 30px;
-}
+  }
 
-.advantages-icon {
+  &-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,14 +14,9 @@
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: $color-bg-box-card;
-}
+  }
 
-.icon-advantages {
-    width: 70px;
-    height: 70px;
-}
-
-.advantages-title {
+  &-title {
     margin-bottom: 10px;
 
     color: $color-tetli-text;
@@ -35,4 +24,5 @@
     font-size: 14px;
     line-height: 1.14;
     text-align: center;
+  }
 }
