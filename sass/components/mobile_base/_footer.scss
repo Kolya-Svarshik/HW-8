@@ -1,17 +1,32 @@
 .footer {
   background-color: $color-bg-footer;
+
+  & > .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
 }
 
 .copi-mail {
   margin-bottom: 60px;
   text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 76px;
+    margin-right: auto;
+  }
 }
 
 .logo-footer {
   margin-bottom: 20px;
 
   & > .logo {
-    padding: 0;
     margin-bottom: 20px;
     color: $color-primary-white;
     text-align: center;
@@ -36,6 +51,10 @@
 
 .network {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 89px;
+  }
 }
 
 .network-title {
@@ -89,8 +108,11 @@
     width: auto;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
+  }
+
+  @media screen and (min-width: 358px) {
   }
 }
 
