@@ -1,25 +1,37 @@
 .footer {
   background-color: $color-bg-footer;
 
-  & > .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
+  & > .container {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 }
 
 .copi-mail {
-  margin-bottom: 60px;
-  text-align: center;
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 76px;
     margin-right: auto;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 69px;
   }
 }
 
@@ -29,7 +41,10 @@
   & > .logo {
     margin-bottom: 20px;
     color: $color-primary-white;
-    text-align: center;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 }
 
@@ -50,36 +65,49 @@
 }
 
 .network {
-  margin-bottom: 60px;
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 89px;
   }
-}
 
-.network-title {
-  margin-bottom: 20px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 
-  color: $color-primary-white;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
+  &-title {
+    margin-bottom: 20px;
+
+    color: $color-primary-white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
 }
 
 .form {
-  text-align: center;
-}
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
-.form-label {
-  display: block;
-  .form-title {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+
+  &-label {
+    @media screen and (max-width: 1199px) {
+      display: block;
+    }
+  }
+
+  &-title {
     margin-bottom: 20px;
     color: $color-primary-white;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
   }
 }
 
@@ -88,7 +116,6 @@
   height: 50px;
   width: 100%;
   padding: 15px;
-  margin-bottom: 20px;
   border: 1px solid $color-br-footer-mail;
   border-radius: 4px;
   background-color: $color-bg-footer;
@@ -98,21 +125,20 @@
   font-size: 16px;
   line-height: 1.25;
 
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 10px;
+  }
+
   &::placeholder {
     color: $color-br-footer-mail;
     font-size: 16px;
     line-height: 1.25;
-  }
-
-  @media screen and (min-width: 479px) {
-    width: auto;
-  }
-
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 358px) {
   }
 }
 
@@ -134,37 +160,37 @@
 
   cursor: pointer;
   overflow: hidden;
-}
 
-.icon-airplane {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-
-  transform: translateY(0px);
-
-  transition: transform 250ms $timing-function;
-
-  .form-button:hover & {
+  &:hover .icon-airplane {
     transform: translateY(40px);
   }
-}
 
-.icon-mail.footer {
-  position: absolute;
-
-  width: 24px;
-  height: 24px;
-  right: 27px;
-  --color5: #fff;
-
-  background-color: transparent;
-
-  transform: translateY(-40px);
-
-  transition: transform 250ms $timing-function;
-
-  .form-button:hover & {
+  &:hover .icon-mail {
     transform: translateY(0px);
+  }
+
+  .icon-airplane {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    transform: translateY(0px);
+
+    transition: transform 250ms $timing-function;
+  }
+
+  .icon-mail {
+    position: absolute;
+
+    width: 24px;
+    height: 24px;
+    right: 27px;
+    --color5: #fff;
+
+    background-color: transparent;
+
+    transform: translateY(-40px);
+
+    transition: transform 250ms $timing-function;
   }
 }

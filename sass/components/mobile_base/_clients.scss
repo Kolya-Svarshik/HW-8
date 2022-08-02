@@ -1,6 +1,13 @@
 .clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &-title {
     margin-bottom: 30px;
@@ -23,14 +30,16 @@
       flex-wrap: wrap;
       margin: -15px;
     }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 }
 
 .clients-item {
   @media screen and (max-width: 479px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+    width: 210px;
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -41,6 +50,20 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 6 * 15px) / 3);
     margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 6);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 479px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
   }
 
   .clients-link {
