@@ -188,7 +188,6 @@
                   src="./images/growing_business-desctop/growing_business-desctop.jpg"
                   alt="Ноутбук на сером столе"
                   width="370"
-                  class="robots-img"
                 />
               </picture>
               <p class="robots-text">Десктопные приложения</p>
@@ -212,7 +211,6 @@
                   src="./images/phone-desctop/phone-desctop.jpg"
                   alt="Открытое наше приложения на телефоне"
                   width="370"
-                  class="robots-img"
                 />
               </picture>
               <p class="robots-text">Мобильные приложения</p>
@@ -236,7 +234,6 @@
                   src="./images/inspiration_has_no_borders-desctop/inspiration_has_no_borders-desctop.jpg"
                   alt="Стационарный копьютер"
                   width="370"
-                  class="robots-img"
                 />
               </picture>
               <p class="robots-text">Дизайнерские решения</p>
@@ -253,52 +250,76 @@
           <ul class="team-list">
             <li class="team-item">
               <div class="team-photo">
-                <picture>
+                <!-- <picture>
                   <source
                     srcset="
                       ./images/nikolai_kucherenko-mobile/nikolai_kucherenko-mobile.webp     450w,
-                      ./images/nikolai_kucherenko-mobile/nikolai_kucherenko-mobile@3x.webp  900w,
+                      ./images/nikolai_kucherenko-mobile/nikolai_kucherenko-mobile@2x.webp  900w,
                       ./images/nikolai_kucherenko-mobile/nikolai_kucherenko-mobile@3x.webp 1350w
                     "
                     type="image/webp"
                     media="max-width: 479px"
+                    sizes="(max-width: 450px) 450px, 100vw"
                   />
                   <source
                     srcset="
                       ./images/nikolai_kucherenko-mobile/nikolai_kucherenko-mobile.webp    1x,
-                      ./images/nikolai_kucherenko-mobile/nikolai_kucherenko-mobile@3x.webp 2x,
+                      ./images/nikolai_kucherenko-mobile/nikolai_kucherenko-mobile@2x.webp 2x,
                       ./images/nikolai_kucherenko-mobile/nikolai_kucherenko-mobile@3x.webp 3x
                     "
                     type="image/webp"
                     media="min-width: 480px"
+                    sizes="(min-width: 450px) 450px, 100vw"
                   />
                   <source
                     srcset="
                       ./images/nikolai_kucherenko-tablet/nikolai_kucherenko-tablet.webp    1x,
-                      ./images/nikolai_kucherenko-tablet/nikolai_kucherenko-tablet@3x.webp 2x,
+                      ./images/nikolai_kucherenko-tablet/nikolai_kucherenko-tablet@2x.webp 2x,
                       ./images/nikolai_kucherenko-tablet/nikolai_kucherenko-tablet@3x.webp 3x
                     "
                     type="image/webp"
                     media="min-width: 768px"
+                    sizes="(min-width: 354px) 354px, 50vw"
                   />
                   <source
                     srcset="
                       ./images/nikolai_kucherenko-desctop/nikolai_kucherenko-desctop.webp    1x,
-                      ./images/nikolai_kucherenko-desctop/nikolai_kucherenko-desctop@3x.webp 2x,
+                      ./images/nikolai_kucherenko-desctop/nikolai_kucherenko-desctop@2x.webp 2x,
                       ./images/nikolai_kucherenko-desctop/nikolai_kucherenko-desctop@3x.webp 3x
                     "
                     type="image/webp"
                     media="min-width: 1200px"
+                    sizes="(min-width: 270px) 270px, 25vw"
                   />
                   <img
                     srcset="
                       ./images/nikolai_kucherenko-mobile/nikolai_kucherenko-mobile.jpg    1x,
-                      ./images/nikolai_kucherenko-mobile/nikolai_kucherenko-mobile@3x.jpg 2x,
+                      ./images/nikolai_kucherenko-mobile/nikolai_kucherenko-mobile@2x.jpg 2x,
                       ./images/nikolai_kucherenko-mobile/nikolai_kucherenko-mobile@3x.jpg 3x
                     "
                     src="./images/nikolai_kucherenko-mobile/nikolai_kucherenko-mobile.jpg"
                     alt="Николай Кучеренко"
                     class="team-img"
+                  />
+                </picture> -->
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/nikolai_kucherenko-desctop/nikolai_kucherenko-desctop.webp    1x,
+                      ./images/nikolai_kucherenko-desctop/nikolai_kucherenko-desctop@2x.webp 2x,
+                      ./images/nikolai_kucherenko-desctop/nikolai_kucherenko-desctop@3x.webp 3x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/nikolai_kucherenko-desctop/nikolai_kucherenko-desctop.jpg    1x,
+                      ./images/nikolai_kucherenko-desctop/nikolai_kucherenko-desctop@2x.jpg 2x,
+                      ./images/nikolai_kucherenko-desctop/nikolai_kucherenko-desctop@3x.jpg 3x
+                    "
+                    src="./images/nikolai_kucherenko-desctop/nikolai_kucherenko-desctop.jpg"
+                    alt="Николай Кучеренко"
                   />
                 </picture>
               </div>
@@ -359,11 +380,25 @@
             </li>
             <li class="team-item">
               <div class="team-photo">
-                <img
-                  src="./images/olga_ivanova.jpg"
-                  alt="Ольга Иванова"
-                  class="team-img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/olga_ivanova-desctop/olga_ivanova-desctop.webp    1x,
+                      ./images/olga_ivanova-desctop/olga_ivanova-desctop@2x.webp 2x,
+                      ./images/olga_ivanova-desctop/olga_ivanova-desctop@3x.webp 3x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/olga_ivanova-desctop/olga_ivanova-desctop.jpg    1x,
+                      ./images/olga_ivanova-desctop/olga_ivanova-desctop@2x.jpg 2x,
+                      ./images/olga_ivanova-desctop/olga_ivanova-desctop@3x.jpg 3x
+                    "
+                    src="./images/olga_ivanova-desctop/olga_ivanova-desctop.jpg"
+                    alt="Николай Кучеренко"
+                  />
+                </picture>
               </div>
               <div class="team-items">
                 <h3 class="team-subtitle">Ольга Иванова</h3>
@@ -422,11 +457,25 @@
             </li>
             <li class="team-item">
               <div class="team-photo">
-                <img
-                  src="./images/andrey_shevchenko.jpg"
-                  alt="Андрей Шевченко"
-                  class="team-img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/andrey_shevchenko-desctop/andrey_shevchenko-desctop.webp    1x,
+                      ./images/andrey_shevchenko-desctop/andrey_shevchenko-desctop@2x.webp 2x,
+                      ./images/andrey_shevchenko-desctop/andrey_shevchenko-desctop@3x.webp 3x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/andrey_shevchenko-desctop/andrey_shevchenko-desctop.jpg    1x,
+                      ./images/andrey_shevchenko-desctop/andrey_shevchenko-desctop@2x.jpg 2x,
+                      ./images/andrey_shevchenko-desctop/andrey_shevchenko-desctop@3x.jpg 3x
+                    "
+                    src="./images/andrey_shevchenko-desctop/andrey_shevchenko-desctop.jpg"
+                    alt="Николай Кучеренко"
+                  />
+                </picture>
               </div>
               <div class="team-items">
                 <h3 class="team-subtitle">Андрей Шевченко</h3>
@@ -485,11 +534,25 @@
             </li>
             <li class="team-item">
               <div class="team-photo">
-                <img
-                  src="./images/ivan_nikolaev.jpg"
-                  alt="Иван Николаев"
-                  class="team-img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/ivan_nikolaev-desctop/ivan_nikolaev-desctop.webp    1x,
+                      ./images/ivan_nikolaev-desctop/ivan_nikolaev-desctop@2x.webp 2x,
+                      ./images/ivan_nikolaev-desctop/ivan_nikolaev-desctop@3x.webp 3x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/ivan_nikolaev-desctop/ivan_nikolaev-desctop.jpg    1x,
+                      ./images/ivan_nikolaev-desctop/ivan_nikolaev-desctop@2x.jpg 2x,
+                      ./images/ivan_nikolaev-desctop/ivan_nikolaev-desctop@3x.jpg 3x
+                    "
+                    src="./images/ivan_nikolaev-desctop/ivan_nikolaev-desctop.jpg"
+                    alt="Николай Кучеренко"
+                  />
+                </picture>
               </div>
               <div class="team-items">
                 <h3 class="team-subtitle">Иван Николаев</h3>

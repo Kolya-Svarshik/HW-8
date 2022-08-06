@@ -15,54 +15,90 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/contacts.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Шапка сайта-->
-    <header class="header">
-      <div class="container">
-        <nav class="header-nav">
-          <a href="index.html" class="logo">
-            <span class="logo-span">Web</span> Studio
-          </a>
+    <header>
+      <section class="header">
+        <div class="container">
+          <nav class="header-nav">
+            <a href="index.html" class="logo">
+              <span class="logo-span">Web</span> Studio
+            </a>
 
-          <ul class="site-nav">
-            <li class="site-item">
-              <a href="./index.html" class="site-link">Студия</a>
-            </li>
-            <li class="site-item">
-              <a href="./portfolio.html" class="site-link">Портфолио</a>
-            </li>
-            <li class="site-item">
-              <a href="./contacts.html" class="site-link current">Контакты</a>
-            </li>
-          </ul>
+            <button
+              type="button"
+              class="menu-button"
+              aria-expanded="false"
+              aria-controls="menu-controls"
+              data-menu-button
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="icon-close"
+                  href="./images/sprite.svg#icon-close"
+                ></use>
+                <use
+                  class="icon-menu"
+                  href="./images/sprite.svg#icon-menu"
+                ></use>
+              </svg>
+            </button>
 
-          <ul class="mail-nav">
-            <li class="mail-item">
-              <a href="mailto:nazarbuyalo.nizza@gmail.com" class="mail-link">
-                <svg class="icon-mail">
-                  <use href="./images/sprite.svg#icon-mail"></use>
-                </svg>
-                nazarbuyalo.nizza@gmail.com
-              </a>
-            </li>
-            <li class="mail-item">
-              <a href="tewl:+380959103848" class="mail-link">
-                <svg class="icon-smartphone">
-                  <use href="./images/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +(380)959103848
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+            <div class="menu-container" id="menu-container" data-menu>
+              <div class="navigation">
+                <ul class="site-nav">
+                  <li class="site-item">
+                    <a href="./index.html" class="site-link">Студия</a>
+                  </li>
+                  <li class="site-item">
+                    <a href="./portfolio.html" class="site-link"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="site-item">
+                    <a href="./contacts.html" class="site-link current">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contacts">
+                <ul class="mail-nav">
+                  <li class="mail-item">
+                    <a
+                      href="mailto:nazarbuyalo.nizza@gmail.com"
+                      class="mail-link"
+                    >
+                      <svg class="icon-mail">
+                        <use href="./images/sprite.svg#icon-mail"></use>
+                      </svg>
+                      nazarbuyalo.nizza@gmail.com
+                    </a>
+                  </li>
+                  <li class="mail-item">
+                    <a href="tewl:+380959103848" class="mail-link">
+                      <svg class="icon-smartphone">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                      </svg>
+                      +38 095 910 38 48
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
     </header>
     <main>
       <section class="portfolio">
-          <div class="contacts">
-            <h1 class="contacts-text">ERROR 404</h1>
+          <div class="error">
+            <h1 class="error-text">ERROR 404</h1>
           </div>
 
         </div>
@@ -72,9 +108,11 @@
       <section class="footer">
         <div class="container">
           <div class="copi-mail">
-            <a href="index.html" class="logo">
-              <span class="logo-span">Web</span> Studio
-            </a>
+            <div class="logo-footer">
+              <a href="index.html" class="logo">
+                <span class="logo-span">Web</span> Studio
+              </a>
+            </div>
             <address class="copy">
               <ul>
                 <li class="copy-nav">
@@ -90,8 +128,8 @@
                 </li>
                 <li class="copy-nav">
                   <a href="tewl:+380959103848" class="copy-link"
-                    >+(380)959103848
-                  </a>
+                    >+38 095 910 38 48</a
+                  >
                 </li>
               </ul>
             </address>
@@ -99,13 +137,13 @@
 
           <div class="network">
             <p class="network-title">ПРИСОЕДИНЯЙТЕСЬ</p>
-            <ul class="social-nav">
+            <ul class="social">
               <li class="social-item">
                 <a
                   href="https://www.instagram.com"
                   target="_blank"
                   title="Instagram"
-                  class="social-link footer"
+                  class="social-link"
                 >
                   <svg class="icon-social">
                     <use href="./images/sprite.svg#icon-instagram"></use>
@@ -117,7 +155,7 @@
                   href="https://twitter.com/"
                   target="_blank"
                   title="Twitter"
-                  class="social-link footer"
+                  class="social-link"
                 >
                   <svg class="icon-social">
                     <use href="./images/sprite.svg#icon-twitter"></use>
@@ -129,7 +167,7 @@
                   href="https://www.facebook.com/"
                   target="_blank"
                   title="Facebook"
-                  class="social-link footer"
+                  class="social-link"
                 >
                   <svg class="icon-social">
                     <use href="./images/sprite.svg#icon-facebook"></use>
@@ -141,7 +179,7 @@
                   href="https://www.linkedin.com/"
                   target="_blank"
                   title="LinkedIn"
-                  class="social-link footer"
+                  class="social-link"
                 >
                   <svg class="icon-social">
                     <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -151,15 +189,14 @@
             </ul>
           </div>
 
-          <form class="form js-speaker-form">
-            <label for="">
+          <form class="form js-speaker-form" autocomplete="off">
+            <label for="" class="form-label">
               <p class="form-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
               <input
                 class="form-input"
                 type="email"
                 name="email"
                 placeholder="E-mail"
-                autocomplete="email"
               />
             </label>
             <button type="submit" class="form-button">
@@ -176,5 +213,6 @@
       </section>
     </footer>
     <script src="./js/index.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
