@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--Шапка сайта-->
+    <header>
+      <section class="header">
+        <div class="container">
+          <nav class="header-nav">
+            <a href="index.html" class="logo">
+              <span class="logo-span">Web</span> Studio
+            </a>
+
+            <button
+              type="button"
+              class="menu-button"
+              aria-expanded="false"
+              aria-controls="menu-controls"
+              data-menu-button
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="icon-close"
+                  href="./images/sprite.svg#icon-close"
+                ></use>
+                <use
+                  class="icon-menu"
+                  href="./images/sprite.svg#icon-menu"
+                ></use>
+              </svg>
+            </button>
+
+            <div class="menu-container" id="menu-container" data-menu>
+              <div class="navigation">
+                <ul class="site-nav">
+                  <li class="site-item">
+                    <a href="./index.html" class="site-link">Студия</a>
+                  </li>
+                  <li class="site-item">
+                    <a href="./portfolio.html" class="site-link"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="site-item">
+                    <a href="./contacts.html" class="site-link current">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contacts">
+                <ul class="mail-nav">
+                  <li class="mail-item">
+                    <a
+                      href="mailto:nazarbuyalo.nizza@gmail.com"
+                      class="mail-link"
+                    >
+                      <svg class="icon-mail">
+                        <use href="./images/sprite.svg#icon-mail"></use>
+                      </svg>
+                      nazarbuyalo.nizza@gmail.com
+                    </a>
+                  </li>
+                  <li class="mail-item">
+                    <a href="tewl:+380959103848" class="mail-link">
+                      <svg class="icon-smartphone">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                      </svg>
+                      +38 095 910 38 48
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="portfolio">
+          <div class="error">
+            <h1 class="error-text">ERROR 404</h1>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <div class="copi-mail">
+            <div class="logo-footer">
+              <a href="index.html" class="logo">
+                <span class="logo-span">Web</span> Studio
+              </a>
+            </div>
+            <address class="copy">
+              <ul>
+                <li class="copy-nav">
+                  <p class="copy-address">г. Киев, пр-т Леси Украинки, 26</p>
+                </li>
+                <li class="copy-nav">
+                  <a
+                    href="mailto:nazarbuyalo.nizza@gmail.com"
+                    class="copy-link"
+                  >
+                    nazarbuyalo.nizza@gmail.com
+                  </a>
+                </li>
+                <li class="copy-nav">
+                  <a href="tewl:+380959103848" class="copy-link"
+                    >+38 095 910 38 48</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="network">
+            <p class="network-title">ПРИСОЕДИНЯЙТЕСЬ</p>
+            <ul class="social">
+              <li class="social-item">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  title="Instagram"
+                  class="social-link"
+                >
+                  <svg class="icon-social">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  title="Twitter"
+                  class="social-link"
+                >
+                  <svg class="icon-social">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  title="Facebook"
+                  class="social-link"
+                >
+                  <svg class="icon-social">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  title="LinkedIn"
+                  class="social-link"
+                >
+                  <svg class="icon-social">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form js-speaker-form" autocomplete="off">
+            <label for="" class="form-label">
+              <p class="form-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="form-button">
+              Подписаться
+              <svg class="icon-airplane">
+                <use href="./images/sprite.svg#icon-airplane"></use>
+              </svg>
+              <svg class="icon-mail">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

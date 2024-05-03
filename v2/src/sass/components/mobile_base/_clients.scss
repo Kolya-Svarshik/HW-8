@@ -1,0 +1,117 @@
+.clients {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &-title {
+    margin-bottom: 30px;
+
+    color: $color-tetli-text;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+  }
+
+  &-list {
+    @media screen and (max-width: 479px) {
+      display: grid;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+}
+
+.clients-item {
+  @media screen and (max-width: 479px) {
+    width: 210px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 6);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 479px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
+  }
+
+  .clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90px;
+    border: 1px solid $color-border-image;
+    border-radius: 4px;
+
+    transition: border-color 250ms $timing-function,
+      --color5 250ms $timing-function;
+
+    &:focus,
+    &:hover {
+      border-color: $color-accent;
+      --color4: #2196f3;
+    }
+
+    .icon-ya_co {
+      width: 44.27px;
+      height: 49.23px;
+    }
+
+    .icon-company_tagline_here {
+      width: 40px;
+      height: 52px;
+    }
+
+    .icon-object_company {
+      width: 41px;
+      height: 42.6px;
+    }
+
+    .icon-foster_peters {
+      width: 79.66px;
+      height: 42.02px;
+    }
+
+    .icon-brand {
+      width: 59px;
+      height: 47px;
+    }
+
+    .icon-company_teg_line {
+      width: 88.48px;
+      height: 45.44px;
+    }
+  }
+}

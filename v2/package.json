@@ -1,0 +1,27 @@
+{
+  "name": "v2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*html"
+  },
+  "parcel-namer-custom": {
+    ".scss$": "lands_files/css/[name].[hash].[type]",
+    ".jsx?$": "lands_files/scripts/[name].[hash].[type]",
+    ".jpg$|.png$|.jpeg$|.svg$|.webp$|.ico": "lands_files/img/[name].[hash].[type]",
+    ".svg$": "lands_files/img/[name].[hash].[type]",
+    ".mp4$": "lands_files/video/[name].[hash].[type]"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cssnano": "^5.1.14",
+    "parcel": "^2.8.3",
+    "parcel-namer-custom": "^0.2.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3"
+  }
+}

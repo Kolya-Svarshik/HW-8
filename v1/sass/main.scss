@@ -1,0 +1,22 @@
+@import "./base/normalize";
+@import "./utils/variables";
+@import "./base/base";
+
+// mobile
+// index
+@import "./components/mobile_base/header";
+@import "./components/mobile_base/logo";
+@import "./components/mobile_base/menu";
+@import "./components/mobile_base/hero";
+@import "./components/button";
+@import "./components/mobile_base/modal";
+@import "./components/mobile_base/advantages";
+@import "./components/mobile_base/robots";
+@import "./components/mobile_base/social-link";
+@import "./components/mobile_base/team";
+@import "./components/mobile_base/clients";
+@import "./components/mobile_base/footer";
+// portfolio
+@import "./components/mobile_base/examples";
+// contacts
+@import "./components/mobile_base/contacts";

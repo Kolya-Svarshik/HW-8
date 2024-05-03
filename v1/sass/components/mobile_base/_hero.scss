@@ -1,0 +1,162 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+
+  @media screen and (max-width: 576px) {
+    max-width: 480px;
+    // width: 100%;
+
+    @media screen and (min-device-pixel-ratio: 1) and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+      background-color: rgba(47, 48, 58, 0.8);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/people_in_office-modile/people_in_office-mobile.webp");
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-color: rgba(47, 48, 58, 0.8);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/people_in_office-modile/people_in_office-mobile@2x.webp");
+    }
+
+    @media screen and (min-device-pixel-ratio: 3) and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-color: rgba(47, 48, 58, 0.8);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/people_in_office-modile/people_in_office-mobile@3x.webp");
+    }
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 960px) {
+    max-width: 768px;
+    // width: 100%;
+
+    @media screen and (min-device-pixel-ratio: 1) and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+      background-color: rgba(47, 48, 58, 0.8);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/people_in_office-tablet/people_in_office-labtop.webp");
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-color: rgba(47, 48, 58, 0.8);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/people_in_office-tablet/people_in_office-labtop@2x.webp");
+    }
+
+    @media screen and (min-device-pixel-ratio: 3) and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-color: rgba(47, 48, 58, 0.8);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/people_in_office-tablet/people_in_office-labtop@3x.webp");
+    }
+  }
+
+  @media screen and (min-width: 961px) {
+    max-width: 1600px;
+    // width: 100%;
+
+    @media screen and (min-device-pixel-ratio: 1) and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+      background-color: rgba(47, 48, 58, 0.8);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/people_in_office-desctop/people_in_office-desctop.webp");
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-color: rgba(47, 48, 58, 0.8);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/people_in_office-desctop/people_in_office-desctop@2x.webp");
+    }
+
+    @media screen and (min-device-pixel-ratio: 3) and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-color: rgba(47, 48, 58, 0.8);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/people_in_office-desctop/people_in_office-desctop@3x.webp");
+    }
+  }
+
+  &-element {
+    @media screen and (max-width: 1199px) {
+      margin-top: 118px;
+      margin-bottom: 118px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 200px;
+      margin-bottom: 200px;
+    }
+  }
+
+  &-title {
+    margin-bottom: 30px;
+
+    color: $color-primary-white;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+
+    @media screen and (max-width: 1199px) {
+      max-width: 360px;
+
+      font-size: 26px;
+      line-height: 1.61;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 620px;
+
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+}
